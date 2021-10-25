@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSVaXML cmp</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="container text-center">
+                    <h5 class="text-center">Subir archivo CSV</h5>
+                    <input class="btn btn-primary" id="fileUpload" type="file" onchange="subirCSV(this)"></input>
+                    <!-- <select id="txtEncoding" class="form-control" title="Enter encoding for input file" onchange="loadTextFile(document.getElementById('f1'),assignText)">
+                        <option value="" selected="selected">-Default-</option>
+                        <option value="ISO-8859-1">ISO-8859-1 (Latin No. 1)</option>
+                        <option value="UTF-8">UTF-8</option>
+                    </select> -->
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="container text-center">
+                    <h5 class="text-center">Convertir a XML</h5>
+                    <button class="btn btn-primary" id="btnConvert" onclick="CSVaXML(Datos)">Convertir</button>
+                    <!-- <button class="btn btn-primary" id="dwn-btn" value='Download XML File'
+                        onclick="outputArray()">Descargar</button> -->
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-start">
+            <div class="col-6 ">
+                <div class="container text-center mt-4">
+                    <h5>CSV</h5>
+                    <textarea class="form-control" id="Datos" rows="20"></textarea>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="container text-center mt-4">
+                    <h5>XML</h5>
+                    <textarea class="form-control" id="convXML" rows="20"></textarea>
+                </div>
+                <div class="col input-group mt-2">
+                    <input type="text" class="form-control" placeholder="Filename" id="filename" value="nombre"
+                        data-to="xml">
+                    <span class="input-group-btn">
+                        <button id="save" class="btn btn-primary">Save</button>
+                    </span>
+                    <!-- <div class="col input-group mt-2">
+                        <label> Base <input type="text" id="txtTopName" class="form-control" value="Informacion" size="15" maxlength="80"></label>
+                    </div>
+                    <div class="col input-group mt-2">
+                        <label> Columnas <input type="text" id="txtRowName" class="form-control" value="Columnas" size="15" maxlength="80"></label>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/probando.js"></script>
+</body>
+
+</html>

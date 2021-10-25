@@ -1,0 +1,41 @@
+<declaracionesPac xsi:noNamespaceSchemaLocation="SubidaPAC.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<declaracion>
+		<requiereCertificadoSani>true</requiereCertificadoSani>
+		<muestras>false</muestras>
+		<importada>false</importada>
+		<tipoConsumo>HUMANO</tipoConsumo>
+		<tipoDeclaracion>PECES DE CULTIVO</tipoDeclaracion>
+		<destino>
+			<pais>US</pais>
+		</destino>
+		<bodegaOFrigorifico>false</bodegaOFrigorifico>
+		<codigoEstablecimiento>77777</codigoEstablecimiento>
+		<tipoEstablecimiento>PLANTA_ELABORADORA</tipoEstablecimiento>
+		<codigoProducto>23934</codigoProducto>
+		<trazabilidades>
+			<traza>
+				<fechaElaboracion>2020-06-10</fechaElaboracion>
+				<fechaVencimiento>2021-06-10</fechaVencimiento>
+				<idLote/>
+				<origenMercancia>ACUICULTURA</origenMercancia>
+				<region>10</region>
+				<comuna/>
+				<centrosCultivo>
+					<codigoEstablecimiento>100022</codigoEstablecimiento>
+				</centrosCultivo>
+				<fechaExtraccion>2020-06-08</fechaExtraccion>
+				<pesoNeto>3000</pesoNeto>
+				<jaula>123</jaula>
+				<envase>CAJAS DE CARTON</envase>
+				<cantidadEnvases>300</cantidadEnvases>
+				<especies/>
+				<embarcaciones/>
+			</traza>
+		</trazabilidades>
+		<almacenamiento/>
+		<plantasFaenamiento>
+			<codigoEstablecimiento>10673</codigoEstablecimiento>
+		</plantasFaenamiento>
+		<fechaFaenamiento>2020-06-09</fechaFaenamiento>
+	</declaracion>
+</declaracionesPac>
